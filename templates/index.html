@@ -32,16 +32,16 @@
     <div class="relative py-3 px-4 sm:px-0 sm:max-w-lg w-full sm:mx-auto">
         <!-- Background Box -->
         <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+            class="absolute inset-0 bg-gradient-to-r from-green-400 to-indigo-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
         </div>
         <div class="relative px-4 py-10 bg-white shadow-lg rounded-3xl w-full sm:p-20 items-center">
             <!-- Heading with logo -->
             <div class="flex flex-col space-y-2 items-center">
                 <h1 class="font-bold text-center flex flex-col">
-                    <span class="text-6xl text-transparent bg-clip-text bg-gradient-to-br from-blue-400 via-purple-600 to-indigo-400"> Распознавание <одежды> </span>
+                    <span class="text-6xl text-transparent bg-clip-text bg-gradient-to-br from-green-400 via-blue-600 to-blue-400"> Распознавание <одежды> </span>
                     <div class="flex flex-row items-center justify-center space-x-1 flex-shrink-0">
                         <br><br>
-                        <span class="text-2xl font-medium text-blue-600">при помощи FastAPI</span>
+                        <span class="text-2xl font-medium text-green-600">при помощи FastAPI</span>
                     </div>
                 </h1>
             </div>
@@ -55,7 +55,7 @@
                     <div id="preview-img" class="flex flex-col space-y-2 items-center"></div>
 
                     <label id="label" onchange="load(event,'preview-img')"
-                        class="w-64 h-48 justify-center flex flex-col items-center px-4 py-6 bg-white rounded-md shadow-md tracking-wide border border-blue cursor-pointer hover:bg-blue-500 hover:text-white text-blue-500 ease-linear transition-all duration-150">
+                        class="w-64 h-48 justify-center flex flex-col items-center px-4 py-6 bg-white rounded-md shadow-md tracking-wide border border-green cursor-pointer hover:bg-green-500 hover:text-white text-green-500 ease-linear transition-all duration-150">
                         <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -68,7 +68,7 @@
                         <input type='file' class="hidden" name="file" accept="image/*" required />
                     </label>
 
-                    <input class="bg-blue-600 rounded-full px-10 py-2 text-white hover:bg-blue-700 hover:shadow-sm transition-all cursor-pointer" type="submit">
+                    <input class="bg-green-600 rounded-full px-10 py-2 text-white hover:bg-green-700 hover:shadow-sm transition-all cursor-pointer" type="submit">
                 </form>
 
                 {% else %}
@@ -82,7 +82,7 @@
                         <small class="text-gray-600 text-base">Точность {{result.inference_time}}%</small>
                     </div>
 
-                    <input onclick="history.back()" class="bg-blue-600 rounded-full px-10 py-2 text-white hover:bg-blue-700 hover:shadow-sm transition-all cursor-pointer" type="reset" />
+                    <input onclick="history.back()" class="bg-green-600 rounded-full px-10 py-2 text-white hover:bg-green-700 hover:shadow-sm transition-all cursor-pointer" type="reset" />
                 </div>
                 {% endif %}
 
@@ -94,7 +94,7 @@
             <div class="mt-3">
                 <div class="items-center flex flex-shrink-0 justify-center">
                     <table>
-                        <tr><td><span class="font-medium text-blue-600 hover:text-blue-700">Выполнено:</span></td></tr>
+                        <tr><td><span class="font-medium text-green-600 hover:text-green-700">Выполнено:</span></td></tr>
                         <tr><td>Дудаловой Е.А.,</td></tr>
                         <tr><td>Сибагатуллиной Л.И.,</td></tr>
                         <tr><td>Петровым К.А.</td></tr>
